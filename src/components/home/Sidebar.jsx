@@ -32,7 +32,7 @@ const Sidebar = () => {
       </div>
       <div>
         {data.map((items, i) => (
-            <div className="my-2 flex items-center"> {items.icon} &nbsp; {items.title}</div>
+            <div className="my-2 flex items-center hover:bg-gray-600 p-2 rounded transittion-all duration-3000"> {items.icon} &nbsp; {items.title}</div>
         ))}
       </div>
       <div>

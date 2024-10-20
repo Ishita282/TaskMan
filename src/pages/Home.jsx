@@ -1,5 +1,6 @@
 import React from 'react'
 import Sidebar from '../components/home/Sidebar'
+import { Outlet } from "react-route-dom"
 
 
 const Home = () => {
@@ -8,7 +9,9 @@ const Home = () => {
         <div className="w-1/6 border border-gray-500 rounded-xl p-4 flex flex-col justify-between">
         <Sidebar />
         </div>
-        <div className="w-5/6 border border-gray-500 rounded-xl p-4">Hello2</div>
+        <div className="w-5/6 border border-gray-500 rounded-xl p-4">Hello2
+          <Outlet />
+        </div>
     </div>
   )
 }
