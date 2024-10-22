@@ -8,4 +8,4 @@ const completedTasks = () => {
   )
 }
 
-export default completedTasks
+export default completedTasks;

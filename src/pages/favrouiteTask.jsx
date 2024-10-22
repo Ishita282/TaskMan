@@ -8,4 +8,4 @@ const favrouiteTask = () => {
   )
 }
 
-export default favrouiteTask
+export default favrouiteTask;

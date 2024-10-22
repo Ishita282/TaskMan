@@ -9,18 +9,22 @@ const Sidebar = () => {
         {
             title: "All tasks",
             icon: <GrNotes />,
+            link: "/",
         },
         {
             title: "Importsant tasks",
             icon: <PiStarThin />,
+            link: "/favrouiteTask",
         },
         {
             title: "Completed tasks",
             icon: <MdOutlineDoneAll />,
+            link: "/completedTask",
         },
         {
             title: "Incomplete tasks",
             icon: <MdOutlineRemoveDone />,
+            link: "/incompletedTask",
         }
     ];
   return (
@@ -32,7 +36,7 @@ const Sidebar = () => {
       </div>
       <div>
         {data.map((items, i) => (
-            <div className="my-2 flex items-center hover:bg-gray-600 p-2 rounded transittion-all duration-3000"> {items.icon} &nbsp; {items.title}</div>
+            <link to={items.link} key={i} className="my-2 flex items-center hover:bg-gray-600 p-2 rounded transittion-all duration-3000"> {items.icon} &nbsp; {items.title} </link>
         ))}
       </div>
       <div>
